@@ -1,4 +1,4 @@
 {
   "user": "root",
-  "recipes": [ "passenger_apache2::mod_rails", "rails", "git" ]
+  "recipes": [ "passenger_apache2::mod_rails", "rails" ]
 }
