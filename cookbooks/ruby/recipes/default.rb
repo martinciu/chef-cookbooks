@@ -50,5 +50,5 @@ end
 
 bash "add gems to path" do
   user "root"
-  code "export PATH=$PATH:#{node[:languages][:ruby][:gems_dir]}/bin/"
+  code "export PATH=$PATH:#{@node[:languages][:ruby][:gems_dir]}/bin/"
 end
