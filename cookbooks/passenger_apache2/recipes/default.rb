@@ -47,6 +47,6 @@ gem_package "passenger" do
 end
 
 execute "passenger_module" do
-  command 'echo -en "\n\n\n\n" | ' + "#{languages[:ruby][:gems_dir]}/bin/passenger-install-apache2-module"
+  command 'echo -en "\n\n\n\n" | ' + "#{node[:languages][:ruby][:gems_dir]}/bin/passenger-install-apache2-module"
   creates node[:passenger][:module_path]
 end
